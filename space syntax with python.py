@@ -6,13 +6,13 @@ from collections import deque
 import numpy as np
 
 
-road_segments = gpd.read_file('D:/gisdata/canal/final/onlyroad/qing/ffpop.shp')
+road_segments = gpd.read_file('D:/XXX.shp')
 
 
 road_segments.crs = 'EPSG:32651'
 
 
-gov_data = pd.read_csv('D:/gisdata/canal/final/onlyroad/qing/shopop_ffpop.csv')
+gov_data = pd.read_csv('D:/XXX.csv')
 
 
 road_segments = road_segments.merge(gov_data, on='FID_1', how='left')
